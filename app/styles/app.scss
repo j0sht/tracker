@@ -1,6 +1,14 @@
 // ----------------------------
 // bootstrap variable overrides
 // ----------------------------
-
+$navbar-default-bg: #FF9C9C;
+$navbar-default-brand-color: white;
+$navbar-default-link-color: white;
+$navbar-default-toggle-hover-bg: white;
+$navbar-border-radius: 10px;
 // end bootstrap variable overrides
 @import 'bootstrap';
+.navbar {
+    border-radius: $navbar-border-radius;
+    padding: 20px;
+}
