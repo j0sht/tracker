@@ -1,2 +1,10 @@
-<h1>Index Router</h1>
+<div class="panel panel-default">
+  <ul class="list-group">
+    {{#each model as |sighting|}}
+    <li class="list-group-item">
+      {{sighting.location}} - {{sighting.sightedAt}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
 
