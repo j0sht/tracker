@@ -7,6 +7,7 @@ export default Ember.Route.extend({
       lName: "Gandee",
       email: "fake@bignerdranch.com"
     });
+    witnessRecord.set('email', 'tgandee@bignerdranch.com');
     return [witnessRecord];
   }
 });
