@@ -5,8 +5,14 @@ export default Ember.Route.extend({
     let witnessRecord = this.store.createRecord('witness', {
       fName: "Todd",
       lName: "Gandee",
+      title: "Mahatma",
       email: "fake@bignerdranch.com"
     });
-    return [witnessRecord];
+    let witnessRecord2 = this.store.createRecord('witness', {
+      fName: "Josh",
+      lName: "Tate",
+      email: "jt@bignerdranch.com"
+    });
+    return [witnessRecord, witnessRecord2];
   }
 });
