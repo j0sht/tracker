@@ -6,6 +6,8 @@ export default Ember.Route.extend({
       location: 'Atlanta',
       sightedAt: new Date('2016-02-09')
     });
+    record1.set('location', 'Paris, France');
+    console.log("Record 1 location: " + record1.get('location'));
     let record2 = this.store.createRecord('sighting', {
       location: 'Calloway',
       sightedAt: new Date('2016-03-14')
